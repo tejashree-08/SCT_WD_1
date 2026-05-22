@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillBridge connects students with internships, mentors, career roadmaps, and placement opportunities." />
+  <title>SkillBridge — Bridge the Gap Between Learning and Career</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Loading screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <p class="loader__text">SkillBridge</p>
+  </div>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="SkillBridge home">
+        <span class="nav__logo-mark">SB</span>
+        <span class="nav__logo-text">SkillBridge</span>
+      </a>
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#internships" class="nav__link">Internships</a></li>
+          <li><a href="#roadmaps" class="nav__link">Roadmaps</a></li>
+          <li><a href="#mentors" class="nav__link">Mentors</a></li>
+          <li><a href="#stories" class="nav__link">Stories</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+          <li><a href="#contact" class="nav__link nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+        <div class="shape shape--4"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="container hero__inner">
+        <span class="eyebrow reveal">🚀 Launch your career with confidence</span>
+        <h1 class="hero__title reveal">
+          Bridge the Gap Between <span class="gradient-text">Learning</span> and <span class="gradient-text">Career</span>
+        </h1>
+        <p class="hero__desc reveal">
+          SkillBridge is the all-in-one platform that connects students with internships, mentors,
+          career roadmaps, and placement opportunities — everything you need to land your dream role.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#internships" class="btn btn--primary ripple">
+            Explore Opportunities
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#mentors" class="btn btn--ghost ripple">Become a Mentor</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat">
+            <div class="stat__num" data-count="5000">0</div>
+            <div class="stat__label">Students</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="1200">0</div>
+            <div class="stat__label">Internships</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="300">0</div>
+            <div class="stat__label">Mentors</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num" data-count="100">0</div>
+            <div class="stat__label">Companies</div>
+          </div>
+        </div>
+      </div>
+      <a href="#features" class="scroll-indicator" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span>Scroll</span>
+      </a>
+    </section>
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need to grow</h2>
+          <p>Powerful tools designed to take you from curious learner to confident professional.</p>
+        </header>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon">🎯</div>
+            <h3>Internship Discovery</h3>
+            <p>Browse curated internships from top companies, matched to your skills and interests.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🗺️</div>
+            <h3>Career Roadmaps</h3>
+            <p>Step-by-step learning paths designed by industry experts to guide your journey.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🧑‍🏫</div>
+            <h3>Industry Mentorship</h3>
+            <p>1:1 guidance from professionals at companies you aspire to work at.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">📄</div>
+            <h3>Resume Builder</h3>
+            <p>Beautiful, ATS-friendly resumes built in minutes with smart AI suggestions.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💼</div>
+            <h3>Placement Preparation</h3>
+            <p>Mock interviews, aptitude tests, and curated DSA practice for placements.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">📊</div>
+            <h3>Skill Assessments</h3>
+            <p>Validate your skills with industry-grade tests and earn verifiable badges.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- INTERNSHIPS -->
+    <section class="section section--alt" id="internships">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Internships</span>
+          <h2>Explore opportunities by category</h2>
+          <p>Find internships across the most in-demand domains.</p>
+        </header>
+        <div class="grid grid--3">
+          <a href="#" class="cat-card reveal"><span class="cat-card__icon">💻</span><h3>Software Development</h3><p>320+ openings</p></a>
+          <a href="#" class="cat-card reveal"><span class="cat-card__icon">📈</span><h3>Data Science</h3><p>210+ openings</p></a>
+          <a href="#" class="cat-card reveal"><span class="cat-card__icon">🤖</span><h3>AI & Machine Learning</h3><p>180+ openings</p></a>
+          <a href="#" class="cat-card reveal"><span class="cat-card__icon">🛡️</span><h3>Cybersecurity</h3><p>140+ openings</p></a>
+          <a href="#" class="cat-card reveal"><span class="cat-card__icon">🎨</span><h3>UI/UX Design</h3><p>120+ openings</p></a>
+          <a href="#" class="cat-card reveal"><span class="cat-card__icon">📣</span><h3>Digital Marketing</h3><p>95+ openings</p></a>
+        </div>
+      </div>
+    </section>
+    <!-- ROADMAPS -->
+    <section class="section" id="roadmaps">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Career Roadmaps</span>
+          <h2>Pick a path, follow the roadmap</h2>
+          <p>Structured journeys created by professionals working at top companies.</p>
+        </header>
+        <div class="roadmap">
+          <div class="roadmap__line"></div>
+          <div class="roadmap__items">
+            <div class="rm-card reveal"><div class="rm-card__dot"></div><h3>Frontend Developer</h3><div class="bar"><span style="width:80%"></span></div><p>HTML · CSS · JavaScript · React</p></div>
+            <div class="rm-card reveal"><div class="rm-card__dot"></div><h3>Backend Developer</h3><div class="bar"><span style="width:72%"></span></div><p>Node · Databases · APIs · Auth</p></div>
+            <div class="rm-card reveal"><div class="rm-card__dot"></div><h3>Full Stack Developer</h3><div class="bar"><span style="width:90%"></span></div><p>Frontend · Backend · DevOps</p></div>
+            <div class="rm-card reveal"><div class="rm-card__dot"></div><h3>Data Analyst</h3><div class="bar"><span style="width:65%"></span></div><p>SQL · Python · Tableau · Stats</p></div>
+            <div class="rm-card reveal"><div class="rm-card__dot"></div><h3>AI Engineer</h3><div class="bar"><span style="width:78%"></span></div><p>ML · Deep Learning · MLOps</p></div>
+            <div class="rm-card reveal"><div class="rm-card__dot"></div><h3>Cloud Engineer</h3><div class="bar"><span style="width:70%"></span></div><p>AWS · Docker · Kubernetes · CI/CD</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MENTORS -->
+    <section class="section section--alt" id="mentors">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Mentors</span>
+          <h2>Learn from the best in the industry</h2>
+          <p>Get guidance from engineers, designers and leaders shaping the future.</p>
+        </header>
+        <div class="grid grid--4">
+          <article class="mentor reveal">
+            <div class="mentor__avatar" style="--g:linear-gradient(135deg,#4F46E5,#8B5CF6)">AS</div>
+            <h3>Ananya Sharma</h3>
+            <p class="muted">Senior SDE · Google</p>
+            <p class="tag">System Design · DSA</p>
+            <a class="mentor__link" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.7C5.5 6.7 4.8 6 4.8 5s.7-1.7 1.7-1.7S8.2 4 8.2 5s-.7 1.7-1.7 1.7zM20 19h-3v-5.6c0-1.5-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V19h-3V8h3v1.3c.4-.6 1.2-1.5 2.8-1.5 2.1 0 3.6 1.4 3.6 4.2V19z"/></svg></a>
+          </article>
+          <article class="mentor reveal">
+            <div class="mentor__avatar" style="--g:linear-gradient(135deg,#06B6D4,#4F46E5)">RK</div>
+            <h3>Rahul Kapoor</h3>
+            <p class="muted">ML Lead · Microsoft</p>
+            <p class="tag">AI · Deep Learning</p>
+            <a class="mentor__link" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.7C5.5 6.7 4.8 6 4.8 5s.7-1.7 1.7-1.7S8.2 4 8.2 5s-.7 1.7-1.7 1.7zM20 19h-3v-5.6c0-1.5-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V19h-3V8h3v1.3c.4-.6 1.2-1.5 2.8-1.5 2.1 0 3.6 1.4 3.6 4.2V19z"/></svg></a>
+          </article>
+          <article class="mentor reveal">
+            <div class="mentor__avatar" style="--g:linear-gradient(135deg,#8B5CF6,#06B6D4)">PM</div>
+            <h3>Priya Menon</h3>
+            <p class="muted">Design Lead · Figma</p>
+            <p class="tag">UI/UX · Product</p>
+            <a class="mentor__link" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.7C5.5 6.7 4.8 6 4.8 5s.7-1.7 1.7-1.7S8.2 4 8.2 5s-.7 1.7-1.7 1.7zM20 19h-3v-5.6c0-1.5-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V19h-3V8h3v1.3c.4-.6 1.2-1.5 2.8-1.5 2.1 0 3.6 1.4 3.6 4.2V19z"/></svg></a>
+          </article>
+          <article class="mentor reveal">
+            <div class="mentor__avatar" style="--g:linear-gradient(135deg,#4F46E5,#06B6D4)">VS</div>
+            <h3>Vikram Singh</h3>
+            <p class="muted">Cloud Architect · AWS</p>
+            <p class="tag">Cloud · DevOps</p>
+            <a class="mentor__link" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V8h3v11zM6.5 6.7C5.5 6.7 4.8 6 4.8 5s.7-1.7 1.7-1.7S8.2 4 8.2 5s-.7 1.7-1.7 1.7zM20 19h-3v-5.6c0-1.5-.5-2.4-1.8-2.4-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9V19h-3V8h3v1.3c.4-.6 1.2-1.5 2.8-1.5 2.1 0 3.6 1.4 3.6 4.2V19z"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- SUCCESS STORIES -->
+    <section class="section" id="stories">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Success Stories</span>
+          <h2>Loved by students everywhere</h2>
+        </header>
+        <div class="carousel reveal" id="carousel">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p>"SkillBridge helped me land my dream internship at a top startup. The mentorship was a game changer!"</p>
+              <div class="t-user"><div class="t-avatar" style="--g:linear-gradient(135deg,#4F46E5,#8B5CF6)">AK</div><div><strong>Aarav Khanna</strong><span>CSE, IIT Delhi</span></div></div>
+            </div>
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p>"The roadmaps gave me clarity. In 6 months I went from confused to confident full stack developer."</p>
+              <div class="t-user"><div class="t-avatar" style="--g:linear-gradient(135deg,#06B6D4,#4F46E5)">SN</div><div><strong>Sneha Nair</strong><span>IT, NIT Trichy</span></div></div>
+            </div>
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p>"The mock interviews and resume builder helped me crack 3 placement offers within a month."</p>
+              <div class="t-user"><div class="t-avatar" style="--g:linear-gradient(135deg,#8B5CF6,#06B6D4)">RV</div><div><strong>Rohan Verma</strong><span>ECE, BITS Pilani</span></div></div>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="c-btn" id="prevBtn" aria-label="Previous">‹</button>
+            <div class="c-dots" id="dots"></div>
+            <button class="c-btn" id="nextBtn" aria-label="Next">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOW IT WORKS -->
+    <section class="section section--alt" id="how">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>Your journey in 4 simple steps</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__num">1</span><h3>Create Profile</h3><p>Sign up and build your skill profile in minutes.</p></li>
+          <li class="step reveal"><span class="step__num">2</span><h3>Discover Opportunities</h3><p>Browse internships matched to your goals.</p></li>
+          <li class="step reveal"><span class="step__num">3</span><h3>Learn New Skills</h3><p>Follow roadmaps and connect with mentors.</p></li>
+          <li class="step reveal"><span class="step__num">4</span><h3>Get Hired</h3><p>Apply, interview, and land your dream role.</p></li>
+        </ol>
+      </div>
+    </section>
+    <!-- STATS -->
+    <section class="section stats-band">
+      <div class="container">
+        <div class="grid grid--4">
+          <div class="bigstat reveal"><div class="stat__num" data-count="12000">0</div><div class="stat__label">Students Joined</div></div>
+          <div class="bigstat reveal"><div class="stat__num" data-count="3500">0</div><div class="stat__label">Internships Posted</div></div>
+          <div class="bigstat reveal"><div class="stat__num" data-count="800">0</div><div class="stat__label">Mentors Available</div></div>
+          <div class="bigstat reveal"><div class="stat__num" data-count="250">0</div><div class="stat__label">Partner Companies</div></div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </header>
+        <div class="faq">
+          <details class="faq__item reveal"><summary>Is SkillBridge free for students?<span class="chev">+</span></summary><p>Yes! Core features including internship discovery and roadmaps are free for all students.</p></details>
+          <details class="faq__item reveal"><summary>How are mentors verified?<span class="chev">+</span></summary><p>Every mentor goes through a rigorous verification process based on industry experience.</p></details>
+          <details class="faq__item reveal"><summary>Do I get a certificate after assessments?<span class="chev">+</span></summary><p>Absolutely. You earn verifiable, shareable certificates on completing skill assessments.</p></details>
+          <details class="faq__item reveal"><summary>Can companies post internships here?<span class="chev">+</span></summary><p>Yes. Companies can sign up and post unlimited internship listings.</p></details>
+          <details class="faq__item reveal"><summary>How do I become a mentor?<span class="chev">+</span></summary><p>Click "Become a Mentor" in the hero section and fill in your profile.</p></details>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Get in touch</h2>
+          <p>Questions? Partnerships? We'd love to hear from you.</p>
+        </header>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required /><span class="error" data-for="name"></span></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required /><span class="error" data-for="email"></span></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required /><span class="error" data-for="phone"></span></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><span class="error" data-for="message"></span></div>
+          <button type="submit" class="btn btn--primary ripple">Send Message</button>
+          <p class="form__success" id="formSuccess" hidden>✅ Thanks! We'll get back to you shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-mark">SB</span>
+          <span class="nav__logo-text">SkillBridge</span>
+        </a>
+        <p class="muted" style="margin-top:1rem;max-width:280px">Bridging the gap between learning and career — one student at a time.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="#features">Features</a></li><li><a href="#internships">Internships</a></li><li><a href="#roadmaps">Roadmaps</a></li><li><a href="#mentors">Mentors</a></li></ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul><li><a href="#">Blog</a></li><li><a href="#">Guides</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Support</a></li></ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p class="muted">Get the latest opportunities, weekly.</p>
+        <form class="newsletter" id="newsletter">
+          <input type="email" placeholder="you@email.com" aria-label="Email" required />
+          <button type="submit">Join</button>
+        </form>
+        <div class="socials" aria-label="Social media">
+  <a href="#" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="#" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="#" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="#" aria-label="X">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+</div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> SkillBridge. All rights reserved.</p>
+      <p>Bridging the gap between learning and careers.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
